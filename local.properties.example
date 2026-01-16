@@ -1,0 +1,9 @@
+# Copy this file to local.properties and fill in your actual values
+# local.properties is automatically ignored by git for security
+
+# Android SDK location (usually auto-generated)
+sdk.dir=/path/to/android/sdk
+
+# LiveKit Configuration
+livekit.wsUrl=wss://your-livekit-server.livekit.cloud
+livekit.token=your-jwt-token-here
