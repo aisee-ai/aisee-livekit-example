@@ -69,13 +69,13 @@ class LiveKitAccessibilityService : AccessibilityService(), LifecycleOwner {
         lifecycleRegistry.currentState = Lifecycle.State.STARTED
 
         // Start camera on main thread (required for bindToLifecycle)
-        serviceScope.launch {
-            try {
-                withContext(Dispatchers.Main) { startCamera() }
-            } catch (t: Throwable) {
-                Log.e(TAG, "Failed to start camera", t)
-            }
-        }
+//        serviceScope.launch {
+//            try {
+//                withContext(Dispatchers.Main) { startCamera() }
+//            } catch (t: Throwable) {
+//                Log.e(TAG, "Failed to start camera", t)
+//            }
+//        }
 
         val identity = "wearable-user"
         val roomName = "default-room"
